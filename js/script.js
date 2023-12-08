@@ -13,8 +13,8 @@ function topo() {
 //Validação de Login
 function login() {
     var logado = 0;
-    var usuario = document.getElementsById("usuario").value;
-    var senha = document.getElementsById("senha").value;
+    var usuario = document.getElementById("usuario").value;
+    var senha = document.getElementById("senha").value;
 
     if(usuario == 'admin' && senha == '3535') {
         window.location = "index.html";
@@ -26,4 +26,9 @@ function login() {
     }
 }
 
+
 //Ativar alert no botão cadastrar
+function cadastro() {
+    alert("Cadastrado com sucesso!");
+    window.location.href = "index.html";
+}
